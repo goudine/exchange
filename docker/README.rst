@@ -83,7 +83,7 @@ Installation
   ::
 
     cd ~/boundless/geonode
-    git checkout exchange/1.3.0  
+    git checkout exchange/[exchange version branch]
 
 
 
