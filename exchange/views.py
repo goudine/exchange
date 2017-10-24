@@ -573,9 +573,12 @@ def unified_elastic_search(request, resourcetype='base'):
 
     # Remove Empty Facets
     for item in facet_results.keys():
-        facets = facet_results[item]['facets']
-        if sum(facets[prop]['count'] for prop in facets) == 0:
-            del facet_results[item] 
+        try:
+            facets = facet_results[item]['facets']
+            if sum(facets[prop]['count'] for prop in facets) == 0:
+                del facet_results[item]
+        except Exception as e:
+            logger.warn(e)
 
     # Get results
     objects = get_unified_search_result_objects(results.hits.hits)
