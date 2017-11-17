@@ -10,8 +10,8 @@ export ALLOWED_HOSTS="['*']"
 # enable other settings
 export GEOQUERY_ENABLED="true"
 export SOCIAL_BUTTONS="true"
-export STORYSCAPES_ENABLED="true"
-export ES_UNIFIED_SEARCH="true"
+#export STORYSCAPES_ENABLED="true"
+#export ES_UNIFIED_SEARCH="true"
 
 # source vendor libs and active venv
 source /etc/profile.d/vendor-libs.sh
