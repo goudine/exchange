@@ -7,6 +7,12 @@ export DATABASE_URL="postgres://exchange:boundless@$HOST_IP:5432/exchange"
 export POSTGIS_URL="postgis://exchange:boundless@$HOST_IP:5432/exchange_data"
 export ALLOWED_HOSTS="['*']"
 
+# enable other settings
+export GEOQUERY_ENABLED="true"
+export SOCIAL_BUTTONS="true"
+export STORYSCAPES_ENABLED="true"
+export ES_UNIFIED_SEARCH="true"
+
 # source vendor libs and active venv
 source /etc/profile.d/vendor-libs.sh
 source /env/bin/activate
